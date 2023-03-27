@@ -6,7 +6,6 @@ body {
 }
 
 /* Nav Start */
-
 .nav-logo {
     max-width:35px;
 }
@@ -42,37 +41,13 @@ body {
 }
   
 .nav a:hover {
-    box-shadow: inset 0 -1.2em 0 hsla(#333333,0, 0%, 100%, 0.4);
+    opacity:.8;
 }
 
 @media (min-width: 500px) {
     .nav ul {
         grid-auto-flow: column;
     }
-}
-
-.hover-underline-animation {
-    display: inline-block;
-    position: relative;
-    color: #8753de;
-}
-  
-.hover-underline-animation::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #8753de;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-}
-  
-.hover-underline-animation:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
 }
 /* Nav End */
 
@@ -84,30 +59,8 @@ body {
     margin-right: auto;
     margin-left: auto;
 }
-
-@media screen and (min-width: 481px) {
-    .container {
-        max-width: 540px;
-    }
-}
-
-@media screen and (min-width: 769px) {
-    .container {
-        max-width: 720px;
-    }
-}
-@media screen and (min-width: 981px) {
-    .container {
-        max-width: 960px;
-    }
-}
   
 .wm-hero {
-    --duration1: 2.5s;
-    --duration2: calc(var(--duration1) / 2);
-    --delay1: calc(var(--duration2) / 2);
-    --delay2: calc(var(--duration2) + var(--delay1));
-    --easing: cubic-bezier(0.65, 0.05, 0.36, 1);
     overflow: hidden;
     text-align: center;
 }
@@ -117,14 +70,10 @@ body {
     font-weight: 600;
     line-height: 1.2;
     color:#333333;
-    margin-top: 2em;
+    margin-top: 75px;
     margin-bottom: 50px;
-    opacity: 0;
-    transform: translateY(3em);
     font-family: Montserrat;
     font-weight:800;
-    -webkit-animation: loadH1 var(--duration1) var(--easing) var(--delay1) forwards;
-            animation: loadH1 var(--duration1) var(--easing) var(--delay1) forwards;
 }
 
 @media screen and (min-width: 981px) {
@@ -138,91 +87,8 @@ body {
     max-width: 100%;
     height: auto;
     border-radius:10px;
-    transform: translateY(100%);
     box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
-    -webkit-animation: loadImg var(--duration2) var(--easing) var(--delay2) forwards;
-            animation: loadImg var(--duration2) var(--easing) var(--delay2) forwards;
 }
-  
-@-webkit-keyframes loadH1 {
-    0% {
-        opacity: 0;
-        transform: translateY(3em);
-    }
-    30%, 50% {
-        opacity: 1;
-        transform: translateY(3em);
-    }
-    100% {
-        opacity: 1;
-        transform: none;
-    }
-}
-  
-@keyframes loadH1 {
-    0% {
-        opacity: 0;
-        transform: translateY(3em);
-    }
-    30%, 50% {
-        opacity: 1;
-        transform: translateY(3em);
-    }
-    100% {
-        opacity: 1;
-        transform: none;
-    }
-}
-
-@-webkit-keyframes loadImg {
-    0% {
-        transform: translateY(100%);
-    }
-    100% {
-        transform: none;
-    }
-}
-
-@keyframes loadImg {
-    0% {
-        transform: translateY(100%);
-    }
-    100% {
-        transform: none;
-    }
-}
-
-@-webkit-keyframes loadBtn {
-    0% {
-        opacity: 0;
-        transform: translateY(8em);
-    }
-    30%, 50% {
-        opacity: 1;
-        transform: translateY(8em);
-    }
-    100% {
-        opacity: 1;
-        transform: none;
-    }
-}
-
-@keyframes loadBtn {
-    0% {
-        opacity: 0;
-        transform: translateY(8em);
-    }
-    30%, 50% {
-        opacity: 1;
-        transform: translateY(8em);
-    }
-    100% {
-        opacity: 1;
-        transform: none;
-    }
-}
-
-/* Hero End */
 
 .github-btns {
     margin-left: auto;
@@ -251,16 +117,10 @@ body {
     text-decoration: none;
     font-weight: 700;
     color: #fff;
-    opacity: 0;
-    transform: translateY(8em);
     margin-bottom:50px;
-    -webkit-animation: loadBtn var(--duration1) var(--easing) var(--delay1) forwards;
-            animation: loadBtn var(--duration1) var(--easing) var(--delay1) forwards;
 }
 
 .download-btn:hover {
     color: #fff;
-    width:205px;
-    min-block-size: 60px;
-    transition: .2s;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
 }
