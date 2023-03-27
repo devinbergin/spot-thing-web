@@ -5,6 +5,15 @@ body {
 }
 
 /* Nav Start */
+
+.nav-logo {
+    max-width:35px;
+}
+
+.nav-logo-container {
+
+}
+
 .nav {
     display: flex;
     height: 70px;
@@ -22,6 +31,10 @@ body {
     justify-items: center;
     margin: auto;
     list-style-type: none;
+}
+
+.nav ul li {
+    margin-top: 8px;
 }
 
 .nav a {
@@ -107,7 +120,7 @@ body {
     line-height: 1.2;
     color:#333333;
     margin-top: 2em;
-    margin-bottom: 2em;
+    margin-bottom: 50px;
     opacity: 0;
     transform: translateY(3em);
     font-family: Montserrat;
@@ -181,4 +194,75 @@ body {
     }
 }
 
+@-webkit-keyframes loadBtn {
+    0% {
+        opacity: 0;
+        transform: translateY(8em);
+    }
+    30%, 50% {
+        opacity: 1;
+        transform: translateY(8em);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes loadBtn {
+    0% {
+        opacity: 0;
+        transform: translateY(8em);
+    }
+    30%, 50% {
+        opacity: 1;
+        transform: translateY(8em);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
 /* Hero End */
+
+.github-btns {
+    margin-left: auto;
+    margin-right: auto;
+    width: 120px;
+    margin-top: 75px;
+}
+
+.download-btn {
+    background-color: #1ed760;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+    background-color: var(--background-base,#1ed760);
+    display: flex;
+    border-radius: 500px;
+    font-size: inherit;
+    min-block-size: 56px;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding-block: 12px;
+    padding-inline: 48px;
+    width: 200px;
+    text-decoration: none;
+    font-weight: 700;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(8em);
+    margin-bottom:50px;
+    -webkit-animation: loadBtn var(--duration1) var(--easing) var(--delay1) forwards;
+            animation: loadBtn var(--duration1) var(--easing) var(--delay1) forwards;
+}
+
+.download-btn:hover {
+    color: #fff;
+    width:205px;
+    min-block-size: 60px;
+    transition: .2s;
+}

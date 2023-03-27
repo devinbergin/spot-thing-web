@@ -3,6 +3,8 @@
 	<head>
     	<meta charset="UTF-8">
 
+        <link rel="icon" type="image/x-icon" href="logo.ico">
+
 		<!-- Font Awesome -->
 		<script src="https://kit.fontawesome.com/6efe8fbb30.js" crossorigin="anonymous"></script>
 
@@ -22,10 +24,11 @@
         <header>
             <div class="nav">
                 <ul>
-                    <li><a class="hover-underline-animation" href="https://twitter.com/julesforrest">Home</a></li>
-                    <li><a class="hover-underline-animation" href="https://codepen.io/julesforrest">Download</a></li>
-                    <li><a class="hover-underline-animation" href="mailto:julesforrest@gmail.com">Quick Start</a></li>
-                    <li><a class="hover-underline-animation" href="https://dribbble.com/julesforrest">Buy Me A Coffee</a></li>
+                    <div class="nav-logo-container">
+                        <img class="nav-logo" src="logo.png">
+                    </div>
+                    <li><a class="hover-underline-animation" target="_blank" href="https://github.com/devinbergin/spot-thing/">View on GitHub</a></li>
+                    <li><a class="hover-underline-animation" target="_blank" href="https://www.buymeacoffee.com/devinbergin">Buy Me A Coffee</a></li>
                 </ul>
               </div>
         </header>
@@ -33,10 +36,15 @@
         <section>
             <div class="wm-hero js-animate">
                 <div class="wm-hero__inner container" align="center">
-                  <h1>A small player for Spotify.</h1><img src="spot-thing-demo.gif" alt="spot-thing" width="450"/>
+                  <h1>A small player for Spotify.</h1>
+                  <a class="download-btn" href="https://github.com/devinbergin/spot-thing/releases/latest" target="_blank">Download</a>
+                  <img src="spot-thing-demo.gif" alt="spot-thing" width="450"/>
                 </div>
             </div>
-
+            
+            <div class="github-btns">
+                <iframe src="https://ghbtns.com/github-btn.html?user=devinbergin&repo=spot-thing&type=star&count=true&size=large" frameborder="0" scrolling="0" width="170" height="30" title="GitHub"></iframe>
+            </div>
         </section>
 
 
